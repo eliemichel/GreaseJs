@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Grease JS</title>
+		<style>
+			body { margin: 0; }
+			a {
+				color: #f26;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			#info {
+				position: absolute;
+				top: 0px;
+				width: 100%;
+				padding: 10px;
+				box-sizing: border-box;
+				text-align: center;
+				z-index: 2;
+				font-family: Monospace;
+				font-size: 13px;
+				line-height: 8px;
+			}
+			.help {
+				color: #777;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="info">
+			<a href="https://www.exppad.com/" target="_blank" rel="noopener">exppad</a>
+			- Orthogonal Grease Pencil Demo
+			<p class="help">Mouse Left: Draw, Mouse Middle: Orbit, Mouse Right: Pan</p>
+		</div>
+
+		<script src="js/libs/three.min.js"></script>
+		<script src="js/libs/dat.gui.min.js"></script>
+		<script src="js/controls/OrbitControls.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
